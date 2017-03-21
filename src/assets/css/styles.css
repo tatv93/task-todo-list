@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Arial, Helvetica, sans-serif;;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.container {
+    background: white;
+    width: 960px;
+    height: 600px;
+    margin: 50px auto 0 auto;
+    display: flex;
+}
+
+.left_side {
+    width: 34%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #f4f4f4;
+}
+
+.right_side {
+    width: 65%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.todo_content {
+    position: relative;
+    height: 100%;
+}
+
+.todo_header {
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.todo_search {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.default_input {
+    padding: 3px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.todo {
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #f4f4f4;
+    cursor: pointer;
+}
+
+.todo.active {
+    background: darkgreen;
+    color: white;
+}
+
+.todo_create_bar {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px 0;
+}
+
+.create_btn {
+    cursor: pointer;
+    margin-left: 15px;
+    background: darkgreen;
+    border-radius: 50%;
+    padding: 0 9px;
+    font-size: 32px;
+    color: white;
+}
+
+.tasks_content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.tasks_header {
+    display: flex;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.tasks_header > div {
+    width: 50%;
+}
+
+.tasks_count {
+    text-align: right;
+    font-size: 13px;
+    color: #888888;
+    font-style: italic;
+}
+
+.task_name {
+    font-size: 30px;
+}
+
+.task {
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px;
+    margin-bottom: 10px;
+}
+
+.task.done {
+    opacity: .5;
+}
+
+.task span {
+    margin-left: 15px;
+}
+
+.tasks_footer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px 0;
+}
+
+.tasks_footer div:nth-child(1) {
+    width: 100%;
+}
